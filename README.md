@@ -55,7 +55,7 @@ Here’s a quick preview of one of them:
 | Hero 1 (Mobile)        | ![Hero 1 Mobile](./public/screenshots/hero1-mobile.png) |
 
 
-#### 🚀 **Live Demo:** [Click Here To View all hero ](https://your-vercel-demo-url.vercel.app)
+#### 🚀 **Live Demo:** [Click Here To View all hero ](https://react-herokit.vercel.app/)
 ---
 
 ### ❤️ Made with Love [**Rahul Kumar**](https://github.com/rahulydw)
