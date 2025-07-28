@@ -42,13 +42,20 @@ This practice helps me convert visual design to actual code using modern fronten
 
 ---
 
-## 📸 Coming Soon
+## 📸 Hero Sections Preview
 
-- Screenshots of each hero  
-- Live Demo (Netlify/Vercel)
+We are continuously adding more beautiful and responsive Hero sections.  
+Stay tuned — more are **Coming Soon**!
 
+Here’s a quick preview of one of them:
+
+| 🧩 Hero Example         | 🖼️ Screenshot                                      |
+|------------------------|--------------------------------------------------|
+| Hero 1 (Desktop)       | ![Hero 1 Desktop](./public/screenshots/hero1.png) |
+| Hero 1 (Mobile)        | ![Hero 1 Mobile](./public/screenshots/hero1-mobile.png) |
+
+
+#### 🚀 **Live Demo:** [Click Here To View all hero ](https://your-vercel-demo-url.vercel.app)
 ---
 
-## ❤️ Made with Love
-
-Crafted with ❤️ by [**Rahul Kumar**](https://github.com/rahulydw)
+### ❤️ Made with Love [**Rahul Kumar**](https://github.com/rahulydw)
