@@ -47,7 +47,7 @@ const Hero2 = () => {
             <header className='sticky top-0 w-full h-[60px] z-40 bg-white opacity-90 flex justify-center items-center'>
                 <nav className='w-full xl:w-[90%] flex justify-between items-center px-5'>
                     {/* Brand Logo */}
-                    <div className='flex justify-center items-center text-xl lg:text-2xl font-semibold lg:font-black text-[#355030] lg:gap-1'>
+                    <div className='flex justify-center items-center text-xl lg:text-2xl font-semibold lg:font-black text-[#355030] lg:gap-1 cursor-pointer'>
                         <span>logo</span>
                         <div className='w-5 h-5 lg:w-8 lg:h-8'><img src="images/headerglass.png" alt="logo" /></div>
                         <span>ipsum</span>
@@ -75,7 +75,7 @@ const Hero2 = () => {
                             ))}
                         </ul>
 
-                        <button className='hidden md:block py-1 px-2 border border-[#355030] text-md font-tinos rounded-md'>Get Premium Access</button>
+                        <button className='hidden md:block py-1 px-2 border border-[#355030] text-md font-tinos rounded-md cursor-pointer'>Get Premium Access</button>
                         <button className='hidden sm:block border-none text-md sm:text-xl text-blue-500 font-tinos hover:bg-gray-200/60 rounded-md px-2 py-1 cursor-pointer font-semibold'>Login</button>
                         <CiSearch className='hidden sm:block border-none text-xl sm:text-2xl rounded-full hover:bg-gray-200/60 cursor-pointer font-semibold' />
                         <div><TiThMenu className='text-xl text-[#355030] sm:text-2xl lg:hidden' /></div>
@@ -105,7 +105,7 @@ const Hero2 = () => {
                             variants={fadeUp}
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            className='px-4 py-2 bg-[#AB3630] text-white font-playfair font-semibold rounded-md mt-10 md:mt-15 xl:mt-5'
+                            className='px-4 py-2 bg-[#AB3630] text-white font-playfair font-semibold rounded-md mt-10 md:mt-15 xl:mt-5 cursor-pointer'
                         >
                             Lets Get Started
                         </motion.button>
