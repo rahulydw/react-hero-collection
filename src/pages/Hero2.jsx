@@ -84,7 +84,7 @@ const Hero2 = () => {
             </header>
 
             {/* Section */}
-            <section className='w-full h-[calc(100vh-60px)] bg-[url(images/bghero2.png)] lg:bg-center lg:bg-cover'>
+            <section className='w-full h-[calc(100vh-60px)] bg-[url(/images/bghero2.png)] lg:bg-center lg:bg-cover'>
                 <div className='w-full h-full'>
                     <motion.div
                         variants={container}
