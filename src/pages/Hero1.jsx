@@ -43,26 +43,26 @@ const Hero1 = () => {
       <section className='relative w-full h-[calc(100vh-60px)] flex flex-col justify-center items-center'>
         {/* Top Box */}
         <div className='w-full h-1/2 md:h-1/2 bg-[#F6F1ED] lg:flex justify-start items-center'>
-          <div className='md:hidden flex flex-col justify-center items-start px-4 mt-10'>
+          <div className='md:hidden flex flex-col justify-center items-start px-4 mt-5 sm:mt-10'>
             <motion.p 
               initial={{ opacity: 0, y: 30 }} 
               animate={{ opacity: 1, y: 0 }} 
               transition={{ duration: 1 }} 
-              className='font-playfair text-6xl'>
+              className='font-playfair text-5xl sm:text-6xl'>
               Fresh Lemon
             </motion.p>
             <motion.p 
               initial={{ opacity: 0, y: 30 }} 
               animate={{ opacity: 1, y: 0 }} 
               transition={{ duration: 1.2 }} 
-              className='font-playfair text-6xl'>
+              className='font-playfair text-5xl sm:text-6xl'>
               Soft Drink
             </motion.p>
             <motion.span 
               initial={{ opacity: 0, x: -50 }} 
               animate={{ opacity: 1, x: 0 }} 
               transition={{ duration: 1.4 }} 
-              className='font-playfair text-xl mt-5 sm:w-[80%]'>
+              className='font-playfair text-md sm:text-xl mt-5 sm:w-[80%]'>
               ELEVATE YOUR CULINARY RITUALS WITH OUR THE TOUCH OF SOFT DRINK
             </motion.span>
             <motion.button
