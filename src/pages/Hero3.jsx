@@ -45,7 +45,7 @@ const Hero3 = () => {
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.3, duration: 0.7 }}
-                        className='text-4xl sm:text-5xl text-[#373737] font-playfair font-semibold pt-5 px-3 leading-12 sm:w-[80%] sm:leading-12 md:w-[50%] lg:w-[73%] lg:text-7xl lg:leading-18'
+                        className='text-4xl sm:text-5xl text-[#373737] font-playfair font-semibold pt-5 px-3 leading-12 w-[90%] sm:w-[80%] sm:leading-12 md:w-[50%] lg:w-[73%] lg:text-7xl lg:leading-18'
                     >
                         Where Every Bite Tells A <span className='text-[#D17537]'>Story</span>
                     </motion.p>
