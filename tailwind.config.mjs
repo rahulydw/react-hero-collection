@@ -17,8 +17,12 @@ export default {
         poppins: ["Poppins", "sans-serif"],
         spaceGrotesk: ["Space Grotesk", "sans-serif"],
         dmSerif: ["DM Serif Display", "serif"],
-      },
-
+        notoSerif: ["Noto Serif", "serif"],
+        robotoCondensed: ["Roboto Condensed", "sans-serif"],
+      }
+    },
+    backgroundImage: {
+      'hero-blend': 'radial-gradient(circle at center, #FFFCF6 30%, #E7DDCD 100%)',
     },
   },
   plugins: [],
