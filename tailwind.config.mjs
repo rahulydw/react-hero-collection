@@ -19,10 +19,13 @@ export default {
         dmSerif: ["DM Serif Display", "serif"],
         notoSerif: ["Noto Serif", "serif"],
         robotoCondensed: ["Roboto Condensed", "sans-serif"],
-      }
+        khand: ["Khand", "sans-serif"],
+        libre: ["Libre Baskerville", "serif"],
+      },
     },
     backgroundImage: {
-      'hero-blend': 'radial-gradient(circle at center, #FFFCF6 30%, #E7DDCD 100%)',
+      "hero-blend":
+        "radial-gradient(circle at center, #FFFCF6 30%, #E7DDCD 100%)",
     },
   },
   plugins: [],
