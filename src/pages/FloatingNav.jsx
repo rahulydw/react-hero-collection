@@ -8,7 +8,7 @@ export default function FloatingNav() {
 
     const [showTour, setShowTour] = useState(false);
 
-    const paths = ["/hero1", "/hero2", "/hero3", "/hero4"];
+    const paths = ["/hero1", "/hero2", "/hero3", "/hero4", "/hero5"];
     const currentIndex = paths.indexOf(location.pathname);
 
     const next = () => {
@@ -58,7 +58,7 @@ export default function FloatingNav() {
             <button
                 onClick={prev}
                 className="px-3 py-1 rounded-xl bg-black/40 text-white 
-                           hover:bg-black/60 transition-all duration-200"
+                           hover:bg-black/60 transition-all duration-200 cursor-pointer"
             >
                 Prev
             </button>
@@ -66,7 +66,7 @@ export default function FloatingNav() {
             <button
                 onClick={next}
                 className="px-3 py-1 rounded-xl bg-black/40 text-white 
-                           hover:bg-black/60 transition-all duration-200"
+                           hover:bg-black/60 transition-all duration-200 cursor-pointer"
             >
                 Next
             </button>

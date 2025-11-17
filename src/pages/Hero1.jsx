@@ -12,7 +12,7 @@ const Hero1 = () => {
   return (
     <div className='w-full h-scree'>
       {/* header */}
-      <header className='w-full h-[60px] bg-[#F6F1ED] flex justify-center items-center border-b'>
+      <header className='w-full h-[60px] bg-[#F6F1ED] flex justify-center items-center'>
         <nav className='w-[90%] lg:w-[80%] mx-auto h-full flex justify-between items-center'>
           {/* Brand Logo */}
           <div className='flex justify-center items-center'>
