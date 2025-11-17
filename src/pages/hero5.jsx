@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from "motion/react"
 
 const hero5 = () => {
     return (
@@ -18,108 +19,181 @@ const hero5 = () => {
             </header>
 
             <div className='select-none'>
-                {/* Mobile Layout - Pizza at top */}
+                {/* Mobile Layout */}
                 <div className='md:hidden relative w-full h-1/2 flex justify-center items-center'>
-                    {/* Circle Pizza */}
-                    <div className='relative w-80 h-80 rounded-full flex justify-center items-center bg-gray-200/80'>
+
+                    {/* Pizza Circle */}
+                    <motion.div
+                        initial={{ scale: 0.7, rotate: -10, opacity: 0 }}
+                        animate={{ scale: 1, rotate: 0, opacity: 1 }}
+                        transition={{ duration: 0.8, ease: "easeOut" }}
+                        className='relative w-80 h-80 rounded-full flex justify-center items-center bg-gray-200/80'
+                    >
                         <div className='w-[95%] h-[95%] rounded-full bg-[#B53322]/90 relative'>
-                            <img src="/images/PizzaPlate.png" alt="Pizza" className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[90%] h-[90%]' />
+                            <img src="/images/PizzaPlate.png" alt="Pizza"
+                                className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[90%] h-[90%]'
+                            />
                         </div>
 
-                        {/* Tomoto */}
-                        <div className='bg-white/30 rounded-lg backdrop-blur-sm px-3 py-2 absolute z-[25] flex justify-center items-center gap-4 -left-8 top-4'>
+                        {/* Tomato */}
+                        <motion.div
+                            initial={{ scale: 0, opacity: 0 }}
+                            animate={{ scale: 1, opacity: 1 }}
+                            transition={{ delay: 0.3 }}
+                            className='bg-white/30 rounded-lg backdrop-blur-sm px-3 py-2 absolute z-[25] flex justify-center items-center gap-4 -left-8 top-4'
+                        >
                             <img src="/images/tomoto.png" alt="tomoto" className='w-8 h-8' />
-                            <div className='flex flex-col justify-center items-start text-neutral-900/80 font-libre text-sm'>
+                            <div className='flex flex-col text-neutral-900/80 font-libre text-sm'>
                                 <label>Tomato</label>
                                 <label><span className='text-orange-400'>280</span> Proteins</label>
                             </div>
-                        </div>
+                        </motion.div>
 
-                        {/* Chizz */}
-                        <div className='bg-white/60 rounded-lg backdrop-blur-sm px-3 py-2 absolute z-[25] flex justify-center items-center gap-4 -right-6 top-4'>
+                        {/* Cheese */}
+                        <motion.div
+                            initial={{ scale: 0, opacity: 0 }}
+                            animate={{ scale: 1, opacity: 1 }}
+                            transition={{ delay: 0.45 }}
+                            className='bg-white/60 rounded-lg backdrop-blur-sm px-3 py-2 absolute z-[25] flex justify-center items-center gap-4 -right-6 top-4'
+                        >
                             <img src="/images/chiz.png" alt="Chizz" className='w-8 h-8' />
-                            <div className='flex flex-col justify-center items-start text-neutral-900/80 font-libre text-sm'>
+                            <div className='flex flex-col text-neutral-900/80 font-libre text-sm'>
                                 <label>Chesse</label>
                                 <label><span className='text-orange-400'>280</span> Proteins</label>
                             </div>
-                        </div>
+                        </motion.div>
 
                         {/* Onion */}
-                        <div className='bg-white/60 rounded-lg backdrop-blur-sm px-3 py-2 absolute z-[25] flex justify-center items-center gap-4 left-1/4 -bottom-2'>
+                        <motion.div
+                            initial={{ scale: 0, opacity: 0 }}
+                            animate={{ scale: 1, opacity: 1 }}
+                            transition={{ delay: 0.6 }}
+                            className='bg-white/60 rounded-lg backdrop-blur-sm px-3 py-2 absolute z-[25] flex justify-center items-center gap-4 left-1/4 -bottom-2'
+                        >
                             <img src="/images/onine.png" alt="Onine" className='w-8 h-8' />
-                            <div className='flex flex-col justify-center items-start text-neutral-900/80 font-libre text-sm'>
+                            <div className='flex flex-col text-neutral-900/80 font-libre text-sm'>
                                 <label>Onion</label>
                                 <label><span className='text-orange-400'>280</span> Proteins</label>
                             </div>
-                        </div>
-                    </div>
+                        </motion.div>
+                    </motion.div>
                 </div>
 
-                {/* Desktop Layout - Original Design */}
+                {/* Desktop Layout */}
                 <div className='hidden md:block'>
-                    {/* Circle Pizza */}
-                    <div className='absolute -top-35 -right-35 w-220 h-220 rounded-full 
-                            flex justify-center items-center 
-                            bg-gray-200/80 z-[5]'>
+
+                    {/* Pizza Circle */}
+                    <motion.div
+                        initial={{ scale: 0.7, rotate: -10, opacity: 0 }}
+                        animate={{ scale: 1, rotate: 0, opacity: 1 }}
+                        transition={{ duration: 0.8, ease: "easeOut" }}
+                        className='absolute -top-35 -right-35 w-220 h-220 rounded-full flex justify-center items-center bg-gray-200/80 z-[5]'
+                    >
 
                         <div className='w-[95%] h-[95%] rounded-full bg-[#B53322]/90 z-[10] relative'>
-                            <img src="/images/PizzaPlate.png" alt="Pizza" className='absolute top-50 -left-32 w-[85%] h-[85%]' />
+                            <img src="/images/PizzaPlate.png" alt="Pizza"
+                                className='absolute top-50 -left-32 w-[85%] h-[85%]'
+                            />
                         </div>
 
-                        {/* Tomoto */}
-                        <div className='bg-white/30 rounded-lg backdrop-blur-sm px-3 py-2 absolute z-[25] flex justify-center items-center gap-4 left-50 top-60'>
+                        {/* Tomato */}
+                        <motion.div
+                            initial={{ scale: 0, opacity: 0 }}
+                            animate={{ scale: 1, opacity: 1 }}
+                            transition={{ delay: 0.3 }}
+                            className='bg-white/30 rounded-lg backdrop-blur-sm px-3 py-2 absolute z-[25] flex justify-center items-center gap-4 left-50 top-60'
+                        >
                             <img src="/images/tomoto.png" alt="tomoto" className='w-10 h-10' />
-                            <div className='flex flex-col justify-center items-start text-neutral-900/80 font-libre'>
+                            <div className='flex flex-col text-neutral-900/80 font-libre'>
                                 <label>Tomato</label>
                                 <label><span className='text-orange-400'>280</span> Proteins</label>
                             </div>
-                        </div>
+                        </motion.div>
 
-                        {/* Chizz */}
-                        <div className='bg-white/60 rounded-lg backdrop-blur-sm px-3 py-2 absolute z-[25] flex justify-center items-center gap-4 right-70 bottom-80'>
+                        {/* Cheese */}
+                        <motion.div
+                            initial={{ scale: 0, opacity: 0 }}
+                            animate={{ scale: 1, opacity: 1 }}
+                            transition={{ delay: 0.45 }}
+                            className='bg-white/60 rounded-lg backdrop-blur-sm px-3 py-2 absolute z-[25] flex justify-center items-center gap-4 right-70 bottom-80'
+                        >
                             <img src="/images/chiz.png" alt="Chizz" className='w-10 h-10' />
-                            <div className='flex flex-col justify-center items-start text-neutral-900/80 font-libre'>
+                            <div className='flex flex-col text-neutral-900/80 font-libre'>
                                 <label>Chesse</label>
                                 <label><span className='text-orange-400'>280</span> Proteins</label>
                             </div>
-                        </div>
+                        </motion.div>
 
                         {/* Onion */}
-                        <div className='bg-white/60 rounded-lg backdrop-blur-sm px-3 py-2 absolute z-[25] flex justify-center items-center gap-4 -left-15 bottom-30'>
+                        <motion.div
+                            initial={{ scale: 0, opacity: 0 }}
+                            animate={{ scale: 1, opacity: 1 }}
+                            transition={{ delay: 0.6 }}
+                            className='bg-white/60 rounded-lg backdrop-blur-sm px-3 py-2 absolute z-[25] flex justify-center items-center gap-4 -left-15 bottom-30'
+                        >
                             <img src="/images/onine.png" alt="Onine" className='w-10 h-10' />
-                            <div className='flex flex-col justify-center items-start text-neutral-900/80 font-libre'>
+                            <div className='flex flex-col text-neutral-900/80 font-libre'>
                                 <label>Onion</label>
                                 <label><span className='text-orange-400'>280</span> Proteins</label>
                             </div>
-                        </div>
-                    </div>
+                        </motion.div>
+                    </motion.div>
                 </div>
 
-                {/* Container */}
+                {/* Text / Content */}
                 <div className='relative h-[calc(100vh-60px)] w-full md:6xl xl:w-7xl mx-auto flex flex-col md:flex-row justify-center items-center'>
-                    {/* Mobile: Content below pizza */}
-                    <div className='md:hidden w-full flex-1 flex justify-center items-start pt-8'>
-                        <div className='w-full px-4 flex flex-col justify-center items-start text-[#B53322] space-y-2 text-center'>
+
+                    {/* Mobile Text */}
+                    <motion.div
+                        initial={{ opacity: 0, y: 30 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay: 0.2 }}
+                        className='md:hidden w-full flex-1 flex justify-center items-start pt-8'
+                    >
+                        <div className='w-full px-4 flex flex-col text-[#B53322] space-y-2 text-center'>
                             <p className='text-6xl font-extrabold font-lobster tracking-wider'>Pizza</p>
                             <p className='text-2xl font-libre'>Perfection Every Time</p>
-                            <p className='text-sm max-w-md text-left'>Lorem ipsum dolor sit amet consectetur. Quis imperdiet urna sollicitudin ac nunc pharetra pharetra tincidunt neque.</p>
+                            <p className='text-sm max-w-md text-left'>
+                                Lorem ipsum dolor sit amet consectetur. Quis imperdiet urna sollicitudin ac nunc pharetra pharetra tincidunt neque.
+                            </p>
 
                             {/* Button */}
-                            <button className='px-4 py-2 bg-[#EA5C0B] rounded-lg text-white mt-4 cursor-pointer font-libre'>View Our Menu</button>
+                            <motion.button
+                                whileHover={{ scale: 1.05 }}
+                                className='bg-[#EA5C0B] text-white rounded-lg cursor-pointer font-khand px-4 py-2 inline-flex items-center justify-center w-fit !w-fit self-start'
+                            >
+                                View Our Menu
+                            </motion.button>
                         </div>
-                    </div>
+                    </motion.div>
 
-                    {/* Desktop: Original layout */}
-                    <div className='hidden md:flex w-1/2 justify-center items-center'>
-                        <div className='w-md flex flex-col justify-center items-start text-[#B53322] space-y-2'>
+                    {/* Desktop Text */}
+                    <motion.div
+                        initial={{ opacity: 0, y: 30 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay: 0.2 }}
+                        className='hidden md:flex w-1/2 justify-center items-center'
+                    >
+                        <div className='w-md flex flex-col text-[#B53322] space-y-2'>
                             <p className='text-9xl font-extrabold font-lobster tracking-wider'>Pizza</p>
                             <p className='text-4xl font-libre'>Perfection Every Time</p>
-                            <p className='text-md'>Lorem ipsum dolor sit amet consectetur. Quis imperdiet urna <br /> sollicitudin ac nunc pharetra pharetra tincidunt neque.</p>
+                            <p className='text-md'>
+                                Lorem ipsum dolor sit amet consectetur. Quis imperdiet urna <br />
+                                sollicitudin ac nunc pharetra pharetra tincidunt neque.
+                            </p>
 
                             {/* Button */}
-                            <button className='px-4 py-2 bg-[#EA5C0B] rounded-lg text-white mt-8 cursor-pointer font-libre'>View Our Menu</button>
+                            <motion.button
+                                whileHover={{ scale: 1.05 }}
+                                className='bg-[#EA5C0B] mt-5 text-white rounded-lg cursor-pointer font-khand px-4 py-2 inline-flex items-center justify-center w-fit !w-fit self-start'
+                            >
+                                View Our Menu
+                            </motion.button>
+
+
                         </div>
-                    </div>
+                    </motion.div>
+
                     <div className='hidden md:block w-1/2' />
                 </div>
             </div>
