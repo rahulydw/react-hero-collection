@@ -24,7 +24,7 @@ export default function FloatingNav() {
         <motion.div
             drag
             dragMomentum={false}
-            className="fixed bottom-6 right-6 z-[9999] p-3 
+            className="fixed bottom-6 right-6 z-[9999] p-2 
                  flex gap-3 shadow-xl 
                  bg-white/20 backdrop-blur-lg border border-white/20
                  rounded-2xl cursor-grab active:cursor-grabbing"
@@ -34,7 +34,7 @@ export default function FloatingNav() {
         >
             <button
                 onClick={prev}
-                className="px-4 py-2 rounded-xl bg-black/40 text-white 
+                className="px-3 py-1 rounded-xl bg-black/40 text-white 
                    hover:bg-black/60 transition-all duration-200"
             >
                 Prev
@@ -42,7 +42,7 @@ export default function FloatingNav() {
 
             <button
                 onClick={next}
-                className="px-4 py-2 rounded-xl bg-black/40 text-white 
+                className="px-3 py-1 rounded-xl bg-black/40 text-white 
                    hover:bg-black/60 transition-all duration-200"
             >
                 Next
